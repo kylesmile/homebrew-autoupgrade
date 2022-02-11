@@ -11,3 +11,7 @@ Tested in zsh, but should be compatible with bash. Some modifications may be nec
 3. `cp local.brew-autoupgrade.plist ~/Library/LaunchAgents`
 4. `launchctl load ~/Library/LaunchAgents/local.brew-autoupgrade.plist`
 5. Run `report-brew-autoupgrade.sh` from your shell config
+
+## Notes
+
+This likely needs modifications to handle pinned packages. While those packages would not be updated, `brew upgrade`'s output would not be properly parsed.
